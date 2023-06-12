@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body class="flex">
+    <div class="container">
+            
+        <h1>Password Generator</h1>
+
+        <div class="pass">
+            <span id="passGen">Password</span>
+            <img id="icon" src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=copy"/>
+        </div>
+
+        <div class="gen">
+            <div class="genLength">
+                <span>Character length</span>
+                <span id="rangenum">8</span>
+            </div>
+            <form id="form">
+
+                <input id="range" style="width: 100%;" type="range" min="8" max="16" step="1" value="8"/>
+
+                <div class="check">
+                    <input id="upper" class="checkbox1" type="checkbox">
+                    <label for="upper">Uppercase</label>    
+                </div>
+                
+                <div class="check">
+                    <input id="lower" class="checkbox2" type="checkbox">
+                    <label for="lower">Lowercase</label>    
+                </div>
+                
+                <div class="check">
+                    <input id="num" class="checkbox3" type="checkbox">
+                    <label for="num">Numbers</label>      
+                </div>
+            
+                <div class="check">
+                    <input id="sym" class="checkbox4" type="checkbox">
+                    <label for="sym">Symbols</label>      
+                </div>
+            
+
+                <div class="strength"></div>
+
+                <button id="btn" type="submit">Generat Password</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
